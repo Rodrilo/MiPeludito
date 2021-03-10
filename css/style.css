@@ -179,7 +179,7 @@ footer{
 
 aside#lateral{
     float: right;
-    width: 30%;
+    width: 40%;
     margin-top: 0px;
 }
 
@@ -199,7 +199,7 @@ aside img{
 
 article#main-col{
     float: left;
-    width: 65%;
+    width: 55%;
 }
 
 img{
