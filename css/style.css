@@ -200,8 +200,50 @@ aside img{
 article#main-col{
     float: left;
     width: 55%;
+
 }
 
 img{
-    width: 70%;
+    width: 100%;
+}
+
+#formulario{
+    width: 400px;
+    margin:auto;
+    background-color: rgba(248, 25, 25, 0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+#formulario h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+#formulario input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    }
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    }
+
+@media (max-width: 320px){
+    #formulario{
+        width: 100%;
+    }
 }
