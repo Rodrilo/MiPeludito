@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-    margin: 0;
-  }
-  
-  /* body {
-    background-color: #282c34;
-    font-family: sans-serif;
-    font-size: 3rem;
-  } */
-  
   .grid-item {
     display: flex;
     align-items: center;
@@ -46,4 +35,150 @@
       grid-row: span 2;
     }
   }
+/* SLIDER MANUAL */
+.container{
+  margin: auto;
+  background-color: none;
+  width: 800px;
+  padding: 30px;
+}
+ul,li{
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+ul.slider li{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background: #fff;
+}
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+ul.slider li:first-child{
+  opacity: 1;
+}
+ul.slider li:target{
+  opacity: 1;
+}
+.menu{
+  text-align: center;
+  margin: 20px
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #111;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/* SLIDER AUTOMÁTICO*/
+.slider2{
+  width: 80%;
+  margin: auto;
+}
+.slider2 ul{
+  display: flex;
+  padding: 0px;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease;
+}
+.slider2:nth-child(2) ul{
+  animation-timing-function: ease;
+}
+.slider2 li{
+  width: 100%;
+  list-style: none;
+}
+.slider2 img{
+  width: 90%;
+  height: 300px;
+}
+@keyframes cambio{
+  0%{
+      margin-left: 0px;
+  }
+  20%{
+     margin-left:0px;
+  }
+  25%{
+      margin-left: -100%;
+  }
+  45%{
+      margin-left: -100%;
+  }
+  50%{
+      margin-left: -200%;
+  }
+  70%{
+      margin-left: -200%;
+  }
+  75%{
+      margin-left: -300%;
+  }
+  100%{
+      margin-left: -100%;
+  }
+}
+/* SOCIAL BAR */
+.social{
+position:fixed;
+top:50%;
+right:0;
+margin-top:-80px;
+z-index:999;
+}
+.social ul li{
+display:block;
+}
+.social ul li a{
+font-size:20px;
+color:#fff;
+background:#42bc7f;
+height: 40px;
+  width: 40px;
+line-height:40px;
+text-align:center;
+display:block;
+-webkit-transition:all 0.4s ease;
+-moz-transition:all 0.4s ease;
+transition:all 0.4s ease;
+}
+.social ul li a:hover{
+width:50px;
+}
+.social  ul li.facebook a{
+background:#425F9C;
+}
+.social .ul li.twitter a{
+background:#1DA1F3;
+}
+.social ul li.instagram a {
+background: #E21B75;
+}
+.social ul li.pinterest a{
+background:#CB2028;
+}
 

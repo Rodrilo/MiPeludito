@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Descripcion" content="Mi peludito - Clínica veterinaria y tienda para mascotas">
-    <meta name="keywords"
-        content="mascotas, veterinaria, clínica veterinaria, esterilización de mascotas, esterilización de perros, esterilización de gatos, jornada de esteriliación, juguetes para mascotas, alimento para mascotas">
-    <title>Mi Peludito - Contacto</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Descripcion" content="Mi peludito - Clínica veterinaria y tienda para mascotas">
+        <meta name="keywords"
+            content="mascotas, veterinaria, clínica veterinaria, esterilización de mascotas, esterilización de perros, esterilización de gatos, jornada de esteriliación, juguetes para mascotas, alimento para mascotas">
+        <title>Mi Peludito - Galería</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/galeria.css" class="css">
+    </head>
 
 <body>
     <header>
@@ -20,13 +21,43 @@
                 <H1><span class="resaltado">MI PELUDITO</span></H1>
                 <nav>
                     <ul>
-                        <li class="actual"><a href="index.html">Inicio</a>
-                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li class="actual"><a href="index.html">INICIO</a>
+                        </li>
+                        <li><a href="nosotros.html">NOSOTROS</a>
+                            <ul>
+                                <li><a href="#">Quienes somos</a></li>
+                                <li><a href="#">Talento Humano</a></li>
+                                <li><a href="#">Nuestras Sedes</a></li>
+                            </ul>
+                        </li>
                         <!-- <li><a href="nosotros2.html">Nosotros2</a></li> -->
-                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="servicios.html">SERVICIOS</a>
+                            <ul>
+                                <li><a href="#">Veterinaria</a>
+                                <ul>
+                                    <li><a href="#">Consulta</a></li>
+                                    <li><a href="#">Esterilización</a></li>
+                                    <li><a href="#">Vacunación</a></li>
+                                    <li><a href="#">Profilaxis</a></li>
+                                </ul></li>
+                                <li><a href="#">Spa Boutique</a></li>
+                                <li><a href="#">Tienda</a></li>
+                                <li><a href="#">Guardería</a></li>
+                                <li><a href="#">Adopciones</a>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- <li><a href="servi.html">Servi</a></li> -->
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">CONTACTO</a>
+                            <ul>
+                                <li><a href="#">Sede Belén</a></li>
+                                <li><a href="#">Sede La América</a></li>
+                                <li><a href="#">Sede El Poblado</a></li>
+                                <li><a href="#">Escríbanos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="galeria.html">GALERIA</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -49,6 +80,23 @@
         </div>
     </section>
 
+<!-- SOCIAL BAR -->
+<Section social>
+    <div class="social">
+        <ul>
+            <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="twitter"><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            </li>
+            <li class="instagram"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="pinterest"><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+</Section>
+<!-- TEXTO IZQUIERDO -->
     <section id=main>
         <div class="contenedor">
             <article id="main-col">
@@ -62,7 +110,7 @@
 
                 <p>Medellín - Colombia</p>
             </article>
-
+<!-- FORMULARIO -->
             <aside id="lateral">
                 <section id="formulario">
                     <form action="submit">
@@ -77,6 +125,8 @@
                     </form>
             </aside>
     </section>
+
+    <!-- MAPA GOOGLE -->
     <section>
         <div class="mapouter">
             <div class="gmap_canvas"><iframe width=100% height=300 id="gmap_canvas"
