@@ -129,6 +129,9 @@ header{
     padding: 20px 0px;
     min-height: 70px;
     border-bottom: 5px solid #414c52;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 header a{
     color: rgb(250, 248, 250);
@@ -255,34 +258,6 @@ ul#servicios li{
     background-color: #e6e6e6; 
 }
 
-/* CSS ORIGINAL DEL SITIO */
-
-/* aside#lateral{
-    float: right;
-    width: 40%;
-    margin-top: 0px;
-}
-
-aside img{
-    width: 80%;
-}
-
-.oscuro{
-    text-align: center;
-    padding: 10px;
-    /* background-color: white; */
-/*     color: #f4f4f4;
-    margin: auto;
-    margin-top: 25px;
-    
-} */
-
-/* article#main-col{
-    float: left;
-    width: 55%;
-
-} */ 
-
 img{
     width: 100%;
 }
@@ -354,6 +329,36 @@ textarea{
     #formulario{
         width: 100%;
     }
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .contenedor1,
+    article#main-col,
+    aside#lateral{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #boletin{
+        margin-top: 40px;
+    }
+    #boletin button{
+     display:block ;
+     width: 100%;
+    }
+    #boletin form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    input, textarea{
+        width: 98%;
+    }
+    
 }
 
 /* CSS Responsive */
@@ -388,3 +393,5 @@ textarea{
     input, textarea{
         width: 98%;
     }
+  
+}

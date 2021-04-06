@@ -95,8 +95,9 @@ ul.slider li:target{
 
 /* SLIDER AUTOMÁTICO*/
 .slider2{
-  width: 80%;
+  width: 90%;
   margin: auto;
+  overflow: hidden
 }
 .slider2 ul{
   display: flex;
